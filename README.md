@@ -44,7 +44,7 @@ import requests
 
 PROXY_POOL_URL = 'http://localhost:5000/get'
 
-def get_proxy():
+def get_proxy(): # 获取代理地址
     try:
         response = requests.get(PROXY_POOL_URL)
         if response.status_code == 200:
@@ -113,6 +113,3 @@ def get_proxy():
 
   > 设置
 
-## 项目参考
-
-[https://github.com/WiseDoge/ProxyPool](https://github.com/WiseDoge/ProxyPool)
